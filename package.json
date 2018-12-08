@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:common": "ng build common"
+    "build:common": "ng build common",
+    "package:common": "npm run build:common && cd dist/common && npm pack"
   },
   "private": true,
   "dependencies": {
