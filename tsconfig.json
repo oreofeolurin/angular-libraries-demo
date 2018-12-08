@@ -18,10 +18,10 @@
       "dom"
     ],
     "paths": {
-      "common": [
+      "@company-reusables/common": [
         "dist/common"
       ],
-      "common/*": [
+      "@company-reusables/common/*": [
         "dist/common/*"
       ]
     }
