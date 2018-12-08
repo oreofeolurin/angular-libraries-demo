@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@company-reusables/common';
 import {ModalModule} from '@ngdbtools/common';
 import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DynamicFormModule, FormDialogComponent} from '@ngdbtools/dynamic-form';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,10 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     CommonModule,
-    ModalModule.withComponents([LoginComponent]),
-    BrowserModule
+    DynamicFormModule,
+    ModalModule.withComponents([LoginComponent, FormDialogComponent]),
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
