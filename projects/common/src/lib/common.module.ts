@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonComponent } from './common.component';
+import { ReplacePipe } from './pipes/replace.pipe';
 
 @NgModule({
-  declarations: [CommonComponent],
-  imports: [
-  ],
-  exports: [CommonComponent]
+  declarations: [ReplacePipe],
+  exports: [ReplacePipe]
 })
 export class CommonModule { }
